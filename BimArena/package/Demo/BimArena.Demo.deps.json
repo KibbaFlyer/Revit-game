@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "BimArena.Demo/1.0.0": {
+        "dependencies": {
+          "BimArena.Desktop": "1.0.0"
+        },
+        "runtime": {
+          "BimArena.Demo.dll": {}
+        }
+      },
+      "BimArena.Core/1.0.0": {
+        "runtime": {
+          "BimArena.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BimArena.Desktop/1.0.0": {
+        "dependencies": {
+          "BimArena.Core": "1.0.0"
+        },
+        "runtime": {
+          "BimArena.Desktop.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BimArena.Demo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BimArena.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BimArena.Desktop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

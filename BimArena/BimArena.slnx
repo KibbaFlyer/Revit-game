@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BimArena.Core/BimArena.Core.csproj" />
+    <Project Path="src/BimArena.Desktop/BimArena.Desktop.csproj" />
+    <Project Path="src/BimArena.Revit/BimArena.Revit.csproj" />
+    <Project Path="src/BimArena.Demo/BimArena.Demo.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BimArena.Tests/BimArena.Tests.csproj" />
+  </Folder>
+</Solution>

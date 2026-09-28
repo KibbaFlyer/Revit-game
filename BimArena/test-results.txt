@@ -1,0 +1,25 @@
+PASS  Ray hits triangles from both sides
+PASS  BVH returns nearest surface and rejects parallel rays
+PASS  BVH agrees with brute force across deterministic random rays
+PASS  Capsule detects a triangle edge at middle height
+PASS  Floor supports an idle player without drift
+PASS  Sprint cannot tunnel through a 10 mm wall
+PASS  Diagonal movement slides along walls
+PASS  Real doorway stays passable
+PASS  Body cannot fit through a 400 mm gap
+PASS  Player climbs ordinary 180 mm stair treads
+PASS  A tall obstacle cannot be auto-stepped
+PASS  Low ceiling blocks jumping
+PASS  Spawn uses the clicked floor and rejects insufficient headroom
+PASS  Furniture blocks shots and movement
+PASS  Navigation reaches the other room through the doorway
+PASS  Enemy behind a wall cannot be shot
+PASS  Hitscan kills visible enemy and awards score
+PASS  Pause freezes simulation, frame spikes are bounded, and restart resets run
+PASS  Waves spawn enemies on reachable floor outside the player
+PASS  Sphere ray handles origins inside and behind the target
+PASS  Capsule hitbox includes the visible head but rejects shots above it
+PASS  Stepping cannot lift the player through low headroom
+PASS  Sloped floor support does not drift sideways at rest
+
+23/23 passed in 5,68s

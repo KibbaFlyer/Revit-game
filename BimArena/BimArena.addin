@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>BIM Arena</Name>
+    <Assembly>BimArena\BimArena.Revit.dll</Assembly>
+    <AddInId>D86C2744-CC92-4831-93A6-EC33B437ACD0</AddInId>
+    <FullClassName>BimArena.Revit.App</FullClassName>
+    <VendorId>BIMA</VendorId>
+    <VendorDescription>BIM Arena — original Doom-inspired model-view game</VendorDescription>
+  </AddIn>
+</RevitAddIns>

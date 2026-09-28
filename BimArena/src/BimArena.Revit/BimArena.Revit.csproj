@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <PlatformTarget>x64</PlatformTarget>
+    <RevitInstallDir Condition="'$(RevitInstallDir)' == ''">C:\Program Files\Autodesk\Revit 2027</RevitInstallDir>
+    <RevitApiDir Condition="'$(RevitApiDir)' == ''">$(RevitInstallDir)</RevitApiDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Revit's API also references desktop facade assemblies outside the WPF subset. -->
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+    <ProjectReference Include="../BimArena.Desktop/BimArena.Desktop.csproj" />
+    <Reference Include="RevitAPI"><HintPath>$(RevitApiDir)/RevitAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="RevitAPIUI"><HintPath>$(RevitApiDir)/RevitAPIUI.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="CheckRevitReferences" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(RevitApiDir)/RevitAPI.dll') Or !Exists('$(RevitApiDir)/RevitAPIUI.dll')" Text="Revit 2027 API assemblies are missing. Install Revit 2027 or pass -p:RevitApiDir=path-to-2027-assemblies." />
+  </Target>
+</Project>
